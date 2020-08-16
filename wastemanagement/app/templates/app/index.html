@@ -33,6 +33,9 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="{% url 'dashboard'%}">Dashboard</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{% url 'logout'%}">LOGOUT</a>
+                            </li>
                             {%endif%}
                         </ul>
                     </div>
@@ -63,7 +66,7 @@
             
             {% else%}
             <h2>Alas! Not Logged in</h2>
-            <a href="{% url 'signup' %}">Signup</a>
+            <a href="{% url 'signup' %}">Signup</a></nbsp></nbsp></nbsp></nbsp>
             <a href="{% url 'login_view' %}">Login</a>
             {% endif %}
         </div>

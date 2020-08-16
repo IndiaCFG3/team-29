@@ -45,7 +45,8 @@ def form1submit(request):
 	if request.method=='POST':
 		form=Form1()
 		if form.is_valid:
-			form.save()
+			p = form.save()
+			p.save()
 
 			return redirect('index')
 	else:

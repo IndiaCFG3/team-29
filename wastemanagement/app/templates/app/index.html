@@ -4,4 +4,6 @@
 <h3>{{user.username}}</h3>
 {% else%}
 <h2>Not Logged in</h2>
+<a href="{% url 'signup' %}">Signup</a>
+<a href="{% url 'login_view' %}">Login</a>
 {% endif %}

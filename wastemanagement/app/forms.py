@@ -4,4 +4,5 @@ from .models import Form1model
 class Form1(ModelForm):
     class Meta:
         model = Form1model
-        fields = ['name','location','vehicle_number','Quantity','num_trips','type_waste','image','comments']
+        #fields = "__all__"
+        fields = ['name','location','vehicle_number','quantity','num_trips','type_waste','image','comments']

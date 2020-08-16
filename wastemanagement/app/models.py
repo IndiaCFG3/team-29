@@ -24,8 +24,9 @@ class Form1model(models.Model):
     location = models.CharField(max_length = 50,choices = location_choices)
     date = models.DateTimeField(auto_now=True)
     vehicle_number = models.CharField(max_length=50)
-    Quantity = models.IntegerField()
-    num_trips = models.IntegerField()
-    type_waste = models.CharField(max_length = 50)
+    quantity = models.IntegerField(blank = True,null = True)
+    num_trips = models.IntegerField(blank = True,null = True)
+    type_waste = models.CharField(max_length = 50, blank = True,null = True)
     image = models.ImageField(blank = True)
     comments = models.CharField(max_length=50,blank = True)
+

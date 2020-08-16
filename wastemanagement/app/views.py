@@ -44,7 +44,7 @@ def logout_view(request):
 def form1submit(request):
 	if request.method=='POST':
 		form=Form1()
-		if form.is_valid:
+		if form.is_valid():
 			p = form.save()
 			p.save()
 

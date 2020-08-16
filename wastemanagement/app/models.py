@@ -29,4 +29,3 @@ class Form1model(models.Model):
     type_waste = models.CharField(max_length = 50, blank = True,null = True)
     image = models.ImageField(blank = True)
     comments = models.CharField(max_length=50,blank = True)
-

@@ -2,11 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 
 # Create your models here.
-location_choices = [
-    ('Choice1','CHOICE1'),
-    ('Choice2','CHOICE2'),
-    ('Choice3','CHOICE3')
-]
+
 
 class Profile(models.Model):
     user_types = [
@@ -20,6 +16,12 @@ class Profile(models.Model):
     user_type = models.CharField(max_length = 50,choices = user_types,default = 'Unassigned')
 
 class Form1model(models.Model):
+    location_choices = [
+    ('delhi','DELHI'),
+    ('kolkata','KOLKATA'),
+    ('mumbai','MUMBAI'),
+    ('trichy','TRICHY'),
+    ]
     name = models.CharField(max_length = 50)
     location = models.CharField(max_length = 50,choices = location_choices)
     date = models.DateTimeField(auto_now=True)

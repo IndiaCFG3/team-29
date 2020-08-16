@@ -1,0 +1,10 @@
+<form method="POST">
+    {% csrf_token %}
+    {% for field in form %}
+      <p>
+        {{ field.label_tag }}<br>
+        {{ field }}
+      </p>
+    {% endfor %}
+    <button type="submit">ADD</button>
+</form>

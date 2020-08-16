@@ -1,0 +1,54 @@
+#x{
+    text-align:left;
+    color:whitesmoke;
+}
+
+#y
+{
+    text-align:left;
+    color:black;
+}
+
+#ao,#bo{
+    background-image: url("11proover.jpg");
+}
+
+#at,#bt{
+     background-color: black;
+}
+
+#ct{
+    background-color: white;
+}
+
+.carousel{
+    margin-top: 5px;
+}
+.carousel-item {
+    height: 350px;
+    width: 900px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+ #cf{
+      margin-top: -75px;
+  }
+
+  #shopname{
+      margin-top: 90px;
+  }
+
+  #formname{
+      margin-top: 90px;
+  }
+
+  #formandname{
+      margin-top: 100px;
+      margin-right: auto;
+  }

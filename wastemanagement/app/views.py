@@ -1,6 +1,8 @@
 from django.shortcuts import render,HttpResponse, HttpResponseRedirect, redirect, reverse
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import authenticate, login, logout
+from .models import Profile
+from .forms import Form1
 def index(request):
     return render(request,'app/index.html',{})
 
@@ -38,3 +40,14 @@ def login_view(request):
 def logout_view(request):
 	logout(request)
 	return redirect('index')
+
+def form1submit(request):
+	if request.method=='POST':
+		form=Form1()
+		if form.is_valid:
+			form.save()
+
+			return redirect('index')
+	else:
+		form=Form1()
+	return render(request,'app/form1.html',{'form':form})

@@ -3,50 +3,53 @@
 
 <head>
 
-    <link rel="stylesheet" href="styles3.css">
+    <title>Solid Waste Management</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
     <title>CARPE</title>
 </head>
 
 <body>
 
-    <div class="row">
-        <div cass="container mb-10">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-                <div class="container">
-                    <div class="collapse navbar-collapse" id="navbarResponsive">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">Home
-                                    <span class="sr-only">(current)</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Dashboard</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Login</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">CARPE</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+        <a class="nav-link" href="after_login_user.html">Go Back<span class="sr-only">(current)</span></a>
+        </li>
+        </ul>
         </div>
-    </div>
+    </nav>
 
 
     <div class="container" id="formwithlogo">
-        <div class="row">
-            <div class="col-3">
+        <div class="container-fluid float-left">
+            <div class="row center-block" style="margin-top: 50px" >
+                <div class="col-md-3 col-sm-2 col-sm-offset-1 col-xs-2 col-xs-offset-1 ml-auto center-block">
 
-                <div id="shopname">
-                    <h3 class="display-3 text-primary">
-                        CARPE
-                    </h3>
+                    <div id="shopname">
+                        <h3 class="display-3 text-primary">
+                            CARPE
+                        </h3>
+                    </div>
                 </div>
+
             </div>
 
-            <div class="col-9 " id="form1">
-                <form>
+            <div class="col-md-9 col-sm-6 col-sm-offset-1 col-xs-4 col-xs-offset-1" id="form1">
+                <form method="POST" action="">
                     <div class="form-group">
                         <label for="email">Project Name</label>
                         <input type="text" class="form-control" id="ProjectName">
@@ -68,14 +71,15 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="sgtn">Segregation</label>
-                        <input type="text" class="form-control" id="sgtn">
+                        <label for="wastetype">Type of waste segregated</label>
+                        <input type="text" class="form-control" id="wastetype">
                     </div>
 
                     <div class="form-group">
                         <label for="qty">Quantity (units not specified)</label>
                         <input type="number" class="form-control" id="qty">
                     </div>
+
 
 
 

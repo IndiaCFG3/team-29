@@ -25,8 +25,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+<<<<<<< HEAD
     'app.apps.AppConfig',
     'crispy_forms',
+=======
+    'app.apps.AppConfig'
+    'matplot'
+>>>>>>> f3752333e705b20e0d2f21a3d5d5aae85fa28162
 ]
 
 MIDDLEWARE = [

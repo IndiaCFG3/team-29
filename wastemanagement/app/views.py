@@ -43,12 +43,14 @@ def logout_view(request):
 
 def form1submit(request):
 	if request.method=='POST':
-		form=Form1()
+		form=Form1(request.POST)
 		if form.is_valid():
-			p = form.save()
+			p = form.save(commit=False)
 			p.save()
-
 			return redirect('index')
 	else:
 		form=Form1()
 	return render(request,'app/form1.html',{'form':form})
+
+def dashboard(request):
+	return render(request,'app/dashboard.html')

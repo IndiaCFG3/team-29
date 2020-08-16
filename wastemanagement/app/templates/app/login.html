@@ -1,5 +1,23 @@
-<h1>LOGIN</h1>
-<form method="post">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+        <title>Solid Waste Management</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="styles3.css">
+    <title>CARPE</title>
+</head>
+
+<body>
+<h1 style="text-align: center;">LOGIN</h1>
+<form method="post" style="margin-left: 35%; margin-top: 10%;">
 	{{message}}<br>
 	
    {% csrf_token %}
@@ -10,3 +28,5 @@
   <button type="submit" class="btn btn-success">Log In!</button>
 
 </form>
+</body>
+</html>
